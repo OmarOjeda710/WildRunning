@@ -51,6 +51,18 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
         val lyIntervalMode= findViewById<LinearLayout>(R.id.lyIntervalMode)
         val lyChallengesSpace = findViewById<LinearLayout>(R.id.lyChallengesSpace)
         val lyChallenges = findViewById<LinearLayout>(R.id.lyChallenges)
+        val lySettingsVolumesSpace = findViewById<LinearLayout>(R.id.lySettingsVolumesSpace)
+        val lySettingsVolumes = findViewById<LinearLayout>(R.id.lySettingsVolumes)
+
+        setHeightLinearLayout(lyMap,0)
+        setHeightLinearLayout(lyIntervalModeSpace,0)
+        setHeightLinearLayout(lyChallengesSpace,0)
+        setHeightLinearLayout(lySettingsVolumesSpace,0)
+
+        lyFragmentMap.translationY = -300f
+        lyIntervalMode.translationY = -300f
+        lyChallenges.translationY = -300f
+        lySettingsVolumes.translationY = -300f
     }
 
     private fun initToolBar(){
